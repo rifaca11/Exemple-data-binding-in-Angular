@@ -39,8 +39,15 @@ export class FirstComponent {
    }
  ]
 
-//  ngSwitch directive
+//  NgSwitch directive
   color = 'red';
+
+//  NgStyle directive
+  client= {
+    name:'charifa',
+    age: 22,
+    color:'lightgreen'
+  }
 
 constructor() {}
   ngOnInit():void{}
