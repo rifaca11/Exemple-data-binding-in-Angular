@@ -17,12 +17,27 @@ export class FirstComponent {
     this.user.name=this.myname;
   }
 
-//  directive
+//  directive NgIf
   display= true;
-
   Visible(){
     this.display= !this.display;
   }
+
+//  directive NgFor
+ students=[
+   {
+     name:'charifa',
+     age:22
+   },
+   {
+     name:'haytham',
+     age:21
+   },
+   {
+     name:'ilyass',
+     age:27
+   }
+ ]
 
 constructor() {}
   ngOnInit():void{}
