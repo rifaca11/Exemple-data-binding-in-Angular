@@ -1,0 +1,9 @@
+
+<div>
+   <h1>{{user.name}}</h1>
+   <p>{{user.age}}</p>
+   <img [src]="user.image" alt="">
+</div>
+
+<input type="text" [(ngModel)]="myname">
+<button (click)="change()"> click to change name</button>
