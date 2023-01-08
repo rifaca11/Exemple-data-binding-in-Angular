@@ -1,4 +1,4 @@
-
+<!--binding data-->
 <div>
    <h1>{{user.name}}</h1>
    <p>{{user.age}}</p>
@@ -7,3 +7,10 @@
 
 <input type="text" [(ngModel)]="myname">
 <button (click)="change()"> click me to change name</button>
+
+<!--directives-->
+<p *ngIf="display == true "> Hey</p>
+<img [src]="user.image" *ngIf="display == true" alt="">
+<button (click)="Visible()"> click me to change name</button>
+
+
