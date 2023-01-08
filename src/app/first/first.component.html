@@ -29,9 +29,15 @@
   <p *ngSwitchCase=" 'green' ">this is green </p>
 </div>
 
-
 <!--NgStyle directive-->
 <div [ngStyle]="{ 'background-color':client.color}">
   <h4>{{client.name}}</h4>
   <p>{{client.age}}</p>
+</div>
+
+
+<!--NgClass directive-->
+<div *ngFor="let item of students" [ngClass]="{ 'bg-danger': item.age<22,'bg-success':item.age>20 }">
+    <h5>{{ item.name }}</h5>
+    <p>{{ item.age }}</p>
 </div>
