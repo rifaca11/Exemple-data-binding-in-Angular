@@ -17,13 +17,13 @@ export class FirstComponent {
     this.user.name=this.myname;
   }
 
-//  directive NgIf
+//  NgIf directive
   display= true;
   Visible(){
     this.display= !this.display;
   }
 
-//  directive NgFor
+//  NgFor directive
  students=[
    {
      name:'charifa',
@@ -38,6 +38,9 @@ export class FirstComponent {
      age:27
    }
  ]
+
+//  ngSwitch directive
+  color = 'red';
 
 constructor() {}
   ngOnInit():void{}

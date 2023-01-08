@@ -8,16 +8,24 @@
 <input type="text" [(ngModel)]="myname">
 <button (click)="change()"> click me to change name</button>
 
-<!-- ngIf directives-->
+<!-- ngIf directive-->
 <p *ngIf="display == true "> Hey</p>
 <img [src]="user.image" *ngIf="display == true" alt="">
 <button (click)="Visible()"> click me to change name</button>
 
-<!-- ngFor directives-->
+<!-- ngFor directive-->
 <div *ngFor="let item of students">
   <ng-container *ngIf="item.age == 22">
     <h5>{{ item.name }}</h5>
     <p>{{ item.age }}</p>
   </ng-container>
+</div>
+
+<!--NgSwitch directive-->
+<div [ngSwitch]="color">
+  <p *ngSwitchCase=" 'red' ">this is red </p>
+  <p *ngSwitchCase=" 'blue' ">this is blue </p>
+  <p *ngSwitchCase=" 'yellow' ">this is yellow </p>
+  <p *ngSwitchCase=" 'green' ">this is green </p>
 
 </div>
